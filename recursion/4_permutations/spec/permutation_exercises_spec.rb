@@ -6,11 +6,11 @@ RSpec.describe '#permutations' do
     expect(permutations([])).to eq [[]]
   end
 
-  xit "returns 2 possible permutations for a set containing 2 numbers" do
+  it "returns 2 possible permutations for a set containing 2 numbers" do
     expect(permutations([1, 2])).to match_array([[2, 1], [1, 2]])
   end
 
-  xit "returns 6 possible permutations for a set containing 3 numbers" do
+  it "returns 6 possible permutations for a set containing 3 numbers" do
     expected_set = [
       [1, 2, 3], [1, 3, 2], [2, 1, 3],
       [2, 3, 1], [3, 1, 2], [3, 2, 1]
