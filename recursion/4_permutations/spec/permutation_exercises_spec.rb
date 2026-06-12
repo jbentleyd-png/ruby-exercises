@@ -19,7 +19,7 @@ RSpec.describe '#permutations' do
     expect(permutations([1, 2, 3])).to match_array(expected_set)
   end
 
-  xit "returns 24 possible permutations for a set containing 4 numbers" do
+  it "returns 24 possible permutations for a set containing 4 numbers" do
     expected_set = [
       [1, 2, 3, 4], [1, 2, 4, 3], [1, 3, 2, 4], [1, 3, 4, 2],
       [1, 4, 2, 3], [1, 4, 3, 2], [2, 1, 3, 4], [2, 1, 4, 3],
